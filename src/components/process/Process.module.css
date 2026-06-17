@@ -1,32 +1,67 @@
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-    .ProcessContainer {
-        height: auto;
-    }
+.ProcessContainer {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 100px;
+}
 
-    .ProcessContainer h1 {
-        font-size: 26px;
-    }
+.ProcessContainer h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px;
+}
 
-    .iconsTexts {
-        flex-direction: column;
-        padding: 0 20px;
-        align-items: center;
-        gap: 10px;
-    }
+.icons {
+    margin-bottom: 50px;
+}
 
-    .arrowLeft,
-    .arrowRight {
-        display: none;
-    }
+.iconsInd {
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
 
-    .text {
-        text-align: center;
-    }
+#Award {
+    background-color: tomato;
+}
 
-    .iconsInd {
-        width: 70px;
-        height: 70px;
-        padding: 20px;
-    }
+.iconsTexts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 150px 0 150px;
+}
+
+.iconsBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text h3 {
+    padding: 20px 0 20px 0;
+}
+
+/* arrow png*/
+.arrowLeft,
+.arrowRight {
+    width: 200px;
+    height: 200px;
+}
+
+.arrowLeft {
+    position: relative;
+    top: -50px;
+    transform: scaleY(-1) rotate(-40deg);
+}
+
+.arrowRight {
+    position: relative;
+    top: -50px;
+    transform: rotate(-40deg);
 }
