@@ -1,94 +1,53 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .navbarContainer {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .line1Image {
+        width: 35px;
+        height: 35px;
+    }
+
+    .line1 h2 {
+        font-size: 16px;
+    }
+
+    .line2 {
+        margin-left: 0;
+        width: 100%;
+        order: 3;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: space-around;
+    }
+
+    .line2 .Link {
+        padding-right: 0;
+        font-size: 12px;
+    }
+
+    .line3 {
+        gap: 8px;
+        width: auto;
+    }
+
+    .line3Button1,
+    .line3Button2 {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
 }
 
-.navbarContainer {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+@media (max-width: 420px) {
+    .line2 .Link {
+        font-size: 11px;
+    }
 
-
-.line2 .line3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.line1 {
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.line1Image {
-    width: 50px;
-    height: 50px;
-}
-
-/* line2 */
-.line2 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-left: 80px;
-}
-
-.line2 .Link {
-    outline: none;
-    border: none;
-    background-color: transparent;
-    padding-right: 40px;
-    text-decoration: none;
-color: black;
-}
-
-.line2 .Link:hover {
-    color: orange;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-/* line3  styling*/
-
-.line3 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.line3Button1 {
-    outline: none;
-    border: none;
-    background-color: transparent;
-}
-
-.line3Button2:hover,
-.line3Button1:hover {
-    color: orange;
-    cursor: pointer;
-}
-
-.line3Button2 {
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border-radius: 8px;
+    .line1 h2 {
+        font-size: 14px;
+    }
 }
